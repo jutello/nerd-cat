@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nerd Cat - Fale Conosco</title>
+    <link rel="shortcut icon" href="imagens/icone.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header>
+        <h1><a href="index.html"><img src="imagens/logo-50.png" alt="Logo"></a></h1>
+
+        <nav>
+            <a href="mochilas.html">Mochilas</a>
+            <a href="acessorios.html">Acessórios</a>
+            <a href="necessaires.html">Necessaires</a>
+            <a href="escolar.html">Escolar</a>
+        </nav>
+    </header>
+
+    <h2>Fale Conosco</h2>
+
+    <p>Olá, precisa falar conosco? Preencha o formulário abaixo e nós responderemos em breve 😄</p>
+
+    <form id="my-form" action="https://formspree.io/f/mgeqybbz" method="post">
+        <p>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" required>
+        </p>
+
+        <p>
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email" required>
+        </p>
+
+        <p>
+            <label for="assunto">Assunto:</label>
+            <select name="assunto" id="assunto">
+                <option value=""></option>
+                <option>Elogios</option>
+                <option>Dúvidas</option>
+                <option>Reclamações</option>
+                <option>Outros</option>
+            </select>
+        </p>
+
+        </p>
+            <label for="mensagem">Mensagem (máximo de 400 caracteres):</label> <br>
+            <textarea name="mensagem" id="" cols="30" rows="10"></textarea>
+        <p>
+
+        <p><button type="submit">Enviar</button></p>
+
+        <p id="my-form-status"></p>
+    </form>
+
+    <footer>
+        <h3>Navegação</h3>
+
+        <p><a href="mochilas.html">Mochilas</a></p>
+        <p><a href="acessorios.html">Acessórios</a></p>
+        <p><a href="necessaires.html">Necessaires</a></p>
+        <p><a href="escolar.html">Escolar</a></p>
+
+        <h3>Contato</h3>
+
+        <p><a href="mailto:NerdCatAtelie@gmail.com">E-mail</a></p>
+        
+        <p><a href="https://wa.me/5511962601424"target="_blank">Whatsapp</a></p>
+
+        <p>Siga-nos no Instagram</p>
+    </footer>
+
+    <script>
+      var form = document.getElementById("my-form");
+      
+      async function handleSubmit(event) {
+        event.preventDefault();
+        var status = document.getElementById("my-form-status");
+        var data = new FormData(event.target);
+        fetch(event.target.action, {
+          method: form.method,
+          body: data,
+          headers: {
+              'Accept': 'application/json'
+          }
+        }).then(response => {
+          if (response.ok) {
+            status.innerHTML = "Obrigada por entrar em contato! 😊";
+            form.reset()
+          } else {
+            response.json().then(data => {
+              if (Object.hasOwn(data, 'errors')) {
+                status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+              } else {
+                status.innerHTML = "Oops! Parece que algo deu errado, tente novamente."
+                status.style.color = "red"
+              }
+            })
+          }
+        }).catch(error => {
+          status.innerHTML = "Oops! Parece que algo deu errado, tente novamente."
+        });
+      }
+      form.addEventListener("submit", handleSubmit)
+  </script>
+  
+</body>
+</html>

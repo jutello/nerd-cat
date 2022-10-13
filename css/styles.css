@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* reset da pag */
+body,
+h1,
+h2,
+p,
+figure {
+    margin: 0;
+    padding: 0px;
+}
+
+header {
+    background-color: rgb(233, 207, 226);
+    text-align: center;
+    height: 220px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(10, 184, 228);
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler;
+    text-transform: uppercase;
+}
+
+img {
+    max-width: 100%;
+}
+
+.logoredondo img {
+    border-radius: 100%;
+    box-shadow: rgb(162, 37, 173) 0 0 15px;
+    position: relative;
+    top: 15px;
+}
+
+.botoes a {
+    font-family: 'Fredoka One', cursive;
+    position: relative;
+    top: -90px;
+    padding: 10px 15px;
+}
+
+.botoes a:hover, .botoes a:focus{  
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.botao01 {
+    display: inline-block;
+    position: relative;
+    right: 230px;
+}
+
+.botao02 {
+    display: inline-block;
+    position: relative;
+    right: 170px;
+}
+
+.botao03 {
+    display: inline-block;
+    position: relative;
+    right: -180px;
+}
+
+.botao04 {
+    display: inline-block;
+    position: relative;
+    right: -250px;
+}
+
+main {
+    background-image: url(../imagens/Plano\ de\ fundo\ do\ site-250px.png);
+    text-align: center;
+    display: inline-block;
+    padding: 80px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(27, 25, 25);
+}
+
+.fotoindex {
+    max-width: 100%;
+}
+
+.fotoindex01 {
+    display: inline-block;
+    margin-top: auto;
+}
+
+.fotoindex02 {
+    display: inline-block;
+    margin-top: auto;
+    position: relative;
+    top: -240px;
+    right: -25px;
+}
+
+.fotoindex03 {
+    display: inline-block;
+    margin-top: auto;
+    position: relative;
+    top: -215px;
+
+}
+
+.fotoindex04 {
+    display: inline-block;
+    margin-top: auto;
+    position: relative;
+    top: -215px;
+    right: -25px;
+}
+
+.missao{
+    
+}
+.missao img {
+    float: left;
+}
+
+.comentario1 {}
+
+.comentario2 img {
+    float: left;
+}
+
+footer {
+    height: 300px;
+    /* mexe na altura do flooter */
+    background-color: rgb(233, 207, 226);
+    color: white;
+    font-weight: bold;
+}
+
+.footer01,
+.footer02,
+.footer03 {
+    float: left;
+    padding: 50px;
+}

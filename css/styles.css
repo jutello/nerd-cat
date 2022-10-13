@@ -16,14 +16,14 @@ figure {
 }
 
 header {
-    background-color: rgb(233, 207, 226);
+    background-color:#FE7FDB;
     text-align: center;
     height: 220px;
 }
 
 a {
     text-decoration: none;
-    color: rgb(10, 184, 228);
+    color: rgb(10, 10, 10);
     font-size: 20px;
     font-family: Impact, Haettenschweiler;
     text-transform: uppercase;
@@ -133,8 +133,8 @@ main {
 
 footer {
     height: 300px;
-    /* mexe na altura do flooter */
-    background-color: rgb(233, 207, 226);
+    font-family: 'Fredoka One', cursive;
+    background-color: #FE7FDB;
     color: white;
     font-weight: bold;
 }

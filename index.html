@@ -8,96 +8,263 @@
     <title>Nerd Cat - Ateliê</title>
     <link rel="shortcut icon" href="imagens/icone.png" type="image/x-icon">
     <link rel="stylesheet" href="css/styles.css">
-    
+    <style>
+        @media screen and (max-width:1125px) {
+
+
+            #foto img {
+                max-width: 90%;
+            }
+
+            .fotoindex {
+                height: 860px;
+            }
+
+            .fotoindex01 {
+                display: inline-block;
+                margin-top: auto;
+                position: relative;
+                top: 0px;
+                right: 210px;
+            }
+
+            .fotoindex02 {
+                display: inline-block;
+                margin-top: auto;
+                position: relative;
+                top: -530px;
+                right: -250px;
+            }
+
+            .fotoindex03 {
+                display: inline-block;
+                margin-top: auto;
+                position: relative;
+                top: -290px;
+                right: 210px;
+            }
+
+            .fotoindex04 {
+                display: inline-block;
+                margin-top: auto;
+                position: relative;
+                top: -820px;
+                right: -250px;
+            }
+        }
+
+        @media screen and (max-width:950px) {
+
+            #foto img {
+                max-width: 75%;
+            }
+
+            .fotoindex {
+                height: 720px;
+            }
+
+            .fotoindex01 {
+                display: inline-block;
+                margin-top: auto;
+                position: relative;
+                top: 0px;
+                right: 210px;
+            }
+
+            .fotoindex02 {
+                display: inline-block;
+                margin-top: auto;
+                position: relative;
+                top: -442px;
+                right: -175px;
+            }
+
+            .fotoindex03 {
+                display: inline-block;
+                margin-top: auto;
+                position: relative;
+                top: -240px;
+                right: 210px;
+            }
+
+            .fotoindex04 {
+                display: inline-block;
+                margin-top: auto;
+                position: relative;
+                top: -680px;
+                right: -175px;
+            }
+        }
+
+        @media screen and (max-width:700px) {
+
+            a {
+                font-size: 16px;
+            }
+
+            #foto {
+                background-color: rgb(91, 101, 196);
+            }
+
+            #foto img {
+                max-width: 60%;
+
+            }
+
+            .fotoindex {
+                background-color: rgb(5, 5, 109);
+                height: 550px;
+            }
+
+            .fotoindex01 {
+                display: inline-block;
+                margin-top: auto;
+                position: relative;
+                top: -30px;
+                right: 210px;
+            }
+
+            .fotoindex02 {
+                display: inline-block;
+                margin-top: auto;
+                position: relative;
+                top: -382px;
+                right: -100px;
+            }
+
+            .fotoindex03 {
+                display: inline-block;
+                margin-top: auto;
+                position: relative;
+                top: -225px;
+                right: 210px;
+            }
+
+            .fotoindex04 {
+                display: inline-block;
+                margin-top: auto;
+                position: relative;
+                top: -570px;
+                right: -100px;
+            }
+        }
+    </style>
+
+
 </head>
 
 <body>
 
     <header>
-
-        <h1 class="logoredondo"><a href="index.html"><img src="imagens/logo-30.jpg" alt="Logo"></a></h1>
-
-        <nav class="botoes">
-            <nav class="botao01">
+        <nav>
+            <nav class="botao1">
                 <a href="mochilas.html">Mochilas</a>
             </nav>
-            <nav class="botao02">
+
+            <nav class="botao2">
                 <a href="acessorios.html">Acessórios</a>
             </nav>
-            <nav class="botao03">
+
+            <nav class="logoredondo">
+                <a href="index.html"><img src="imagens/logo-184px.jpg" alt="Logo com o nome do site"></a>
+            </nav>
+
+            <nav class="botao3">
                 <a href="necessaires.html">Necessaires</a>
             </nav>
-            <nav class="botao04">
+
+            <nav class="botao4">
                 <a href="escolar.html">Escolar</a>
             </nav>
         </nav>
+
     </header>
 
-    <main>
+    <main id="foto">
 
         <div class="fotoindex">
             <nav class="fotoindex01">
-                <a href="mochilas.html"><img src="imagens/1-foto-index-ok.png" alt=""></a>
+                <a href="mochilas.html"><img src="imagens/1-foto-index-ok.png" alt="Mochila azul marinho com estampa do pequemo príncipe e estojo do pequeno príncipe."></a>
             </nav>
+
             <nav class="fotoindex02">
-                <a href="acessorios.html"><img src="imagens/2-foto-index-ok.png" alt=""></a>
+                <a href="acessorios.html"><img src="imagens/2-foto-index-ok.png" alt="Kit com necessaire e porta óculos com estampa preta com cactos."></a>
             </nav>
+
             <br>
+
             <nav class="fotoindex03">
-                <a href="necessaires.html"><img src="imagens/3-foto-index-ok.png" alt=""></a>
+                <a href="necessaires.html"><img src="imagens/3-foto-index-ok.png" alt="Necessaire pequena com estampa do Snoopy."></a>
             </nav>
+
             <nav class="fotoindex04">
-                <a href="escolar.html"><img src="imagens/4-foto-index-ok.png" alt=""></a>
+                <a href="escolar.html"><img src="imagens/4-foto-index-ok.png" alt="Kit com estojo e marca páginas com estampa de Star Wars."></a>
             </nav>
         </div>
 
-    
-        <h2>Missão</h2>
+        <div id="missao">
 
-        <div class="missao">
-            <p><img src="imagens/icone.png" alt=""></p>
+            <div class="logomiss">
+                <img src="imagens/icone.png" alt="Logo com um gato cinza com óculos">
+            </div>
+            
+            <div class="textomiss">
+                <h2>Missão</h2>
 
-            <p>Nerd Cat Ateliê nasceu para atender as pessoas que gostam da cultura nerd e geek e que não encontram, com
-                facilidade, produtos personalizados com temas e personagens deste universo tão rico e amplo.</p>
+                <p>Nerd Cat Ateliê nasceu para atender as pessoas que gostam da cultura nerd e geek e que não encontram,
+                    com
+                    facilidade, produtos personalizados com temas e personagens deste universo tão rico e amplo.</p>
 
-            <h2>Visão</h2>
-            <p>Ser uma referência para um público que ama exclusividade e cultura nerd e geek.</p>
+                <h2>Visão</h2>
+                <p>Ser uma referência para um público que ama exclusividade e cultura nerd e geek.</p>
+            </div>
         </div>
-        <br>
 
-
-        <p><img src="imagens/1-foto-index.png" alt=""></p>
-
-        <br>
+        <div class="borda">
+            <p><img src="imagens/foto-index-ok.png" alt=""></p>
+        </div>
 
         <h2>Comentários</h2>
 
-        <br>
-        <div class="comentario1">
-            <p>
-                <img src="imagens/comentario 1.png" alt="">
-                <img src="imagens/comentario 2.png" alt="">
-                <img src="imagens/comentario 3.png" alt="">
-                <img src="imagens/comentario 4.png" alt="">
-            </p>
-        </div>
-        <br>
-        <br>
-        <div class="comentario2">
-            <p><img src="imagens/" alt=""></p>
+        <div class="comentario">
+            <div class="com01">
+                <img src="imagens/comentario-1.png" alt="Nome do cliente: Marcos Antonio avaliou Case multifuncional - Precisa desse produto e só encontrei no Elo 7. Data: 16/08/2022. Comentário do cliente: Minha primeira compra na plataforma, e apesar do receio no início estou muito satisfeito. Chegou tudo do jeito que pedi, com bastante capricho, a qualidade do produto é ótima e além de que ele é muito lindo. O(a) vendedor(a) também foi muito atencioso.">
+            </div>
 
-            <h2>Valores</h2>
-            <p>A satisfação do cliente é a nossa principal meta, porque cliente feliz e satisfeito vira cliente fiel.
-            </p>
-        </div>
+            <div class="com02">
+                <img src="imagens/comentario-2.png"
+                alt="Nome do cliente: Bruna Teixeira de Almeida avaliou Case multifuncional - Presente para minha irmã. Data: 18/01/2022. Comentário do cliente: Lindo!! Eu amei!! Amei os mimos enviados também. Da pra ver o amor e carinho dentro do pacote.">
+            </div>
+
+            <div class="com03">
+                <img src="imagens/comentario-3.png" alt="Nome do cliente: Priscilla Correa Cezar avaliou Porta carregador e fone - Para mim e para meu filho. Data: 17/09/2021. Comentário do cliente: Os produtos são muito bem feitos, com um capricho sem igual. Amei tudo e até os mimos enviados!!! Muito obrigada!!">
+            </div>
+
+            <div class="com04">
+                <img src="imagens/comentario-4.png" alt="Nome do cliente: Amanda Fagundes Picolo avaliou Porta talheres - Mimo para mim mesma. Data: 22/10/2018. Comentário do cliente: A entrega veio dentro do prazo, mas a surpresa maior foi quando abri o pacote... material de altíssima qualidade, muito bonito e bem acabado. A Adriana é muito atenciosa, desde a realização do pedido até depois que o recebemos. Extremamente satisfeita, muito obrigada!!!">
+            </div>
+
+            <br>
+
+            <div class="valores">
+                <img src="imagens/marca_transparente-menor.png" alt="">
+
+                <h2>Valores</h2>
+                <p>A satisfação do cliente é a nossa principal meta, porque cliente feliz e satisfeito vira cliente
+                    fiel.
+                </p>
+            </div>
+
+            <div class="whats">
+                <a href="faleconosco.html"><img src="imagens/faleconosco2.png" alt=""></a>
+            </div>
     </main>
 
     <footer>
-
         <div class="footer01">
             <h3>Navegação</h3>
 
-            <p><a href="mochilas.html">Mochilas</a></p>
+            <p><span><a href="mochilas.html">Mochilas</a></span></p>
             <p><a href="acessorios.html">Acessórios</a></p>
             <p><a href="necessaires.html">Necessaires</a></p>
             <p><a href="escolar.html">Escolar</a></p>
@@ -106,9 +273,9 @@
         <div class="footer02">
             <h3>Contato</h3>
 
-            <p><a href="mailto:NerdCatAtelie@gmail.com">E-mail</a></p>
+            <p><img src="imagens/logo-gmail.png" alt="Logo de e-mail preto e branco"><a href="mailto:NerdCatAtelie@gmail.com"> E-mail</a></p>
 
-            <p><a href="https://wa.me/5511962601424" target="_blank">Whatsapp</a>
+            <p><img src="imagens/logo-zap.png" alt="Logo do whatsapp preto e branco"><a href="https://wa.me/5511962601424" target="_blank"> Whatsapp</a>
             </p>
 
             <p><a href="faleconosco.html">Fale Conosco</a></p>
@@ -116,11 +283,9 @@
 
         <div class="footer03">
             <h3>Siga-nos no Instagram</h3>
-            <p><img src="imagens/logo-instagram-menor.png" alt=""></p>
+            <p><a href="https://www.instagram.com/nerdcatatelie" target="_blank"><img src="imagens/qrcode-insta.png" alt="Logo preto e branco do Instagram"></a></p>
         </div>
-
     </footer>
 
 </body>
-
 </html>

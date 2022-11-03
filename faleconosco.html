@@ -1,112 +1,179 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nerd Cat - Fale Conosco</title>
-    <link rel="shortcut icon" href="imagens/icone.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nerd Cat - Fale Conosco</title>
+  <link rel="shortcut icon" href="imagens/icone.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <style>
+    .formulario01 {
+      width: 100%;
+      height: 50px;
+      position: relative;
+    }
+
+    .formulario01 label, .formulario01 input {
+      position: absolute;
+    }
+
+    .formulario01 label {
+      left: 0;
+      top: 0;
+      z-index: 100;
+      font-size: 14px;
+      
+    }
+
+    .formulario01 input {
+      left: 0;
+      top: 0;
+    }
+  </style>
 </head>
+
 <body>
 
-    <header>
-        <h1><a href="index.html"><img src="imagens/logo-50.png" alt="Logo"></a></h1>
-
-        <nav>
+ <header>
+    <nav>
+        <nav class="botao1">
             <a href="mochilas.html">Mochilas</a>
+        </nav>
+
+        <nav class="botao2">
             <a href="acessorios.html">Acessórios</a>
+        </nav>
+
+        <nav class="logoredondo">
+            <a href="index.html"><img src="imagens/logo-184px.jpg" alt="Logo com o nome do site"></a>
+        </nav>
+
+        <nav class="botao3">
             <a href="necessaires.html">Necessaires</a>
+        </nav>
+
+        <nav class="botao4">
             <a href="escolar.html">Escolar</a>
         </nav>
-    </header>
+    </nav>
 
+ </header>
+
+
+  <main>
     <h2>Fale Conosco</h2>
 
     <p>Olá, precisa falar conosco? Preencha o formulário abaixo e nós responderemos em breve 😄</p>
 
     <form id="my-form" action="https://formspree.io/f/mgeqybbz" method="post">
-        <p>
-            <label for="nome">Nome:</label>
-            <input type="text" name="nome" id="nome" required>
-        </p>
 
-        <p>
-            <label for="email">E-mail:</label>
-            <input type="email" name="email" id="email" required>
-        </p>
+      <div class="formulario01">
+        <label for="nome">Nome:</label>
+        <input  type="text" name="nome" id="nome" required>
+      </div>
 
-        <p>
-            <label for="assunto">Assunto:</label>
-            <select name="assunto" id="assunto">
-                <option value=""></option>
-                <option>Elogios</option>
-                <option>Dúvidas</option>
-                <option>Reclamações</option>
-                <option>Outros</option>
-            </select>
-        </p>
+      <br><br>
 
-        </p>
-            <label for="mensagem">Mensagem (máximo de 400 caracteres):</label> <br>
-            <textarea name="mensagem" id="" cols="30" rows="10"></textarea>
-        <p>
+      <div class="formulario02">
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" id="email" required>
+      </div>
 
-        <p><button type="submit">Enviar</button></p>
+      <br><br>
 
-        <p id="my-form-status"></p>
+      <div class="formulario03">
+        <label for="assunto">Assunto:</label>
+        <select name="assunto" id="assunto">
+          <option value=""></option>
+          <option>Elogios</option>
+          <option>Dúvidas</option>
+          <option>Reclamações</option>
+          <option>Outros</option>
+        </select>
+      </div>
+
+      <br>
+
+      </div class="formulario04">
+      <label for="mensagem"></label> <br>
+      <textarea name="mensagem" id="" cols="50" rows="10"></textarea>
+      </div>
+
+      <br> <br>
+
+      <div class="formulario05">
+        <button type="submit">Enviar</button>
+      </div>
+
+      <p id="my-form-status"></p>
     </form>
+  </main>
 
-    <footer>
+  <footer>
+    <div class="footer01">
         <h3>Navegação</h3>
 
-        <p><a href="mochilas.html">Mochilas</a></p>
+        <p><span><a href="mochilas.html">Mochilas</a></span></p>
         <p><a href="acessorios.html">Acessórios</a></p>
         <p><a href="necessaires.html">Necessaires</a></p>
         <p><a href="escolar.html">Escolar</a></p>
+    </div>
 
+    <div class="footer02">
         <h3>Contato</h3>
 
-        <p><a href="mailto:NerdCatAtelie@gmail.com">E-mail</a></p>
-        
-        <p><a href="https://wa.me/5511962601424"target="_blank">Whatsapp</a></p>
+        <p><img src="imagens/logo-gmail.png" alt="Logo de e-mail preto e branco"><a
+                href="mailto:NerdCatAtelie@gmail.com"> E-mail</a></p>
 
-        <p>Siga-nos no Instagram</p>
-    </footer>
+        <p><img src="imagens/logo-zap.png" alt="Logo do whatsapp preto e branco"><a
+                href="https://wa.me/5511962601424" target="_blank"> Whatsapp</a>
+        </p>
 
-    <script>
-      var form = document.getElementById("my-form");
-      
-      async function handleSubmit(event) {
-        event.preventDefault();
-        var status = document.getElementById("my-form-status");
-        var data = new FormData(event.target);
-        fetch(event.target.action, {
-          method: form.method,
-          body: data,
-          headers: {
-              'Accept': 'application/json'
-          }
-        }).then(response => {
-          if (response.ok) {
-            status.innerHTML = "Obrigada por entrar em contato! 😊";
-            form.reset()
-          } else {
-            response.json().then(data => {
-              if (Object.hasOwn(data, 'errors')) {
-                status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
-              } else {
-                status.innerHTML = "Oops! Parece que algo deu errado, tente novamente."
-                status.style.color = "red"
-              }
-            })
-          }
-        }).catch(error => {
-          status.innerHTML = "Oops! Parece que algo deu errado, tente novamente."
-        });
-      }
-      form.addEventListener("submit", handleSubmit)
+        <p><a href="faleconosco.html">Fale Conosco</a></p>
+    </div>
+
+    <div class="footer03">
+        <h3>Siga-nos no Instagram</h3>
+        <p><img src="imagens/logo-instagram-menor.png" alt="Logo preto e branco do Instagram"></p>
+    </div>
+  </footer>
+
+  <script>
+    var form = document.getElementById("my-form");
+
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var status = document.getElementById("my-form-status");
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+          'Accept': 'application/json'
+        }
+      }).then(response => {
+        if (response.ok) {
+          status.innerHTML = "Obrigada por entrar em contato! 😊";
+          form.reset()
+        } else {
+          response.json().then(data => {
+            if (Object.hasOwn(data, 'errors')) {
+              status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+            } else {
+              status.innerHTML = "Oops! Parece que algo deu errado, tente novamente."
+              status.style.color = "red"
+            }
+          })
+        }
+      }).catch(error => {
+        status.innerHTML = "Oops! Parece que algo deu errado, tente novamente."
+      });
+    }
+    form.addEventListener("submit", handleSubmit)
   </script>
-  
+
 </body>
 </html>

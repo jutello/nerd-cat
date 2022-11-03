@@ -1,97 +1,110 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
 
 * {
     box-sizing: border-box;
 }
 
-
-/* reset da pag */
 body,
 h1,
-h2,
 p,
 figure {
     margin: 0;
     padding: 0px;
 }
 
-header {
-    background-color:#FE7FDB;
+body {
+    font-family: 'Comfortaa', cursive;
     text-align: center;
-    height: 220px;
-}
-
-a {
-    text-decoration: none;
-    color: rgb(10, 10, 10);
-    font-size: 20px;
-    font-family: Impact, Haettenschweiler;
-    text-transform: uppercase;
+    background-image: url(../imagens/plano-de-fundo-do-site-200px.png);
 }
 
 img {
     max-width: 100%;
 }
 
+header {
+    background-color: #FE7FDB;
+    height: 136px;
+    text-align: center;
+    max-width: 100%;
+}
+
+a {
+    height: 40px;
+    text-decoration: none;
+    color: #74014A;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+
+header a {
+    border-radius: 8px;
+    padding: 10px;
+}
+
+  
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+
 .logoredondo img {
     border-radius: 100%;
-    box-shadow: rgb(162, 37, 173) 0 0 15px;
+    box-shadow: #74014A 0 0 15px;
     position: relative;
-    top: 15px;
+   
 }
 
-.botoes a {
-    font-family: 'Fredoka One', cursive;
+.botao1 a,
+.botao2 a,
+.botao3 a,
+.botao4 a {
     position: relative;
-    top: -90px;
-    padding: 10px 15px;
+    top: 95px;
 }
 
-.botoes a:hover, .botoes a:focus{  
-    background-color: rgb(255, 255, 255);
-    border-radius: 10px;
-}
-
-.botao01 {
-    display: inline-block;
+.botao1 a:hover,
+.botao2 a:hover,
+.botao3 a:hover,
+.botao4 a:hover {
     position: relative;
-    right: 230px;
-}
-
-.botao02 {
-    display: inline-block;
-    position: relative;
-    right: 170px;
-}
-
-.botao03 {
-    display: inline-block;
-    position: relative;
-    right: -180px;
-}
-
-.botao04 {
-    display: inline-block;
-    position: relative;
-    right: -250px;
+    top: 95px;
+    background-color:#fcaddc ;
 }
 
 main {
-    background-image: url(../imagens/plano-de-fundo-do-site-200px.png);
-    text-align: center;
     display: inline-block;
     padding: 80px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Comfortaa', cursive;
     color: rgb(27, 25, 25);
+    font-size: 20px;
+}
+
+main img {
+    border-radius: 10px;
+
 }
 
 .fotoindex {
     max-width: 100%;
+    height: 980px;
 }
+
 
 .fotoindex01 {
     display: inline-block;
     margin-top: auto;
+
+}
+
+.fotoindex01:hover {
+    transform: scale(1.03);
+    transition: 500ms;
+    box-shadow: #50c3c6 0 0 15px;
+
 }
 
 .fotoindex02 {
@@ -102,12 +115,23 @@ main {
     right: -25px;
 }
 
+.fotoindex02:hover {
+    transform: scale(1.03);
+    transition: 500ms;
+    box-shadow: #50c3c6 0 0 15px;
+}
+
 .fotoindex03 {
     display: inline-block;
     margin-top: auto;
     position: relative;
     top: -215px;
+}
 
+.fotoindex03:hover {
+    transform: scale(1.03);
+    transition: 500ms;
+    box-shadow: #50c3c6 0 0 15px;
 }
 
 .fotoindex04 {
@@ -118,31 +142,138 @@ main {
     right: -25px;
 }
 
-.missao{
-    
+.fotoindex04:hover {
+    transform: scale(1.03);
+    transition: 500ms;
+    box-shadow: #50c3c6 0 0 15px;
 }
-.missao img {
+
+#missao {
+    display: flex;
+    width: 50vw;
+    margin: auto;
+    text-align: left;
+}
+
+#missao img {
     float: left;
 }
 
-.comentario1 {}
+.logomiss {
+    margin: auto;
+}
 
-.comentario2 img {
+.textomiss {
+    width: 30vw;
+}
+
+.borda{
+  padding-top: 25px;
+}
+.comentario {
+    height: 750px;
+}
+
+.comentario img {
+    margin: 15px;
+}
+
+.com01,
+.com03 {
+    text-align: left;
+}
+
+.com02,
+.com04 {
+    text-align: right;
+}
+
+.valores img {
     float: left;
+}
+
+.valores {
+    text-align: left;
+    padding-right: 260px;
+    padding-left: 260px;
+}
+
+.whats{
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
 }
 
 footer {
-    height: 300px;
-    font-family: 'Fredoka One', cursive;
+    height: 200px;
+    font-family: 'Comfortaa', cursive;
     background-color: #FE7FDB;
-    color: white;
+    color: #74014A;
     font-weight: bold;
+    max-width: 100%;
 }
 
 .footer01,
 .footer02,
 .footer03 {
     float: left;
-    padding: 50px;
-   
+    padding-left: 50px;
 }
+
+.footer03 {
+    position: relative;
+    right: -500px;
+    text-align: center;
+}
+
+.footer02 {
+    position: relative;
+    right: -200px;
+}
+
+footer p {
+    margin-top: 10px;
+}
+
+.formulario01 {
+    background-color: #D9D9D9;
+    width: 50%;
+    margin: auto;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.formulario02 {
+    background-color: #D9D9D9;
+    width: 50%;
+    margin: auto;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.formulario03 {
+    background-color: #D9D9D9;
+    width: 50%;
+    margin: auto;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.formulario05 {
+    background-color: #D9D9D9;
+    width: 50%;
+    margin: auto;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.acessorios,
+.escolar,
+.mochilas,
+.nece {
+    display: flex;
+    margin-bottom: 50px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+

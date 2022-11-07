@@ -22,7 +22,7 @@
 
             .fotoindex01 {
                 display: inline-block;
-                margin-top: auto;
+                margin-top: 0px;
                 position: relative;
                 top: 0px;
                 right: 210px;
@@ -51,9 +51,24 @@
                 top: -820px;
                 right: -250px;
             }
+
+            .whats {
+                position: fixed;
+                bottom: 120px;
+                left: 0px;
+            }
         }
 
         @media screen and (max-width:950px) {
+
+            a {
+                font-size: 16px;
+            }
+
+            .logoredondo img {
+                max-width: 85%;
+            }
+
 
             #foto img {
                 max-width: 75%;
@@ -94,16 +109,79 @@
                 top: -680px;
                 right: -175px;
             }
-        }
 
-        @media screen and (max-width:700px) {
-
-            a {
+            .valores {
+                text-align: left;
+                padding-right: 100px;
+                padding-left: 100px;
                 font-size: 16px;
             }
 
-            #foto {
-                background-color: rgb(91, 101, 196);
+            #missao {
+                display: flex;
+                width: 50vw;
+                margin: auto;
+                text-align: left;
+                font-size: 16px;
+            }
+
+            .whats {
+                position: fixed;
+                bottom: 100px;
+                left: 0px;
+            }
+
+            .footer01,
+            .footer02,
+            .footer03 {
+                float: left;
+                padding-left: 40px;
+            }
+
+            .footer03 {
+                position: relative;
+                right: -300px;
+                text-align: center;
+            }
+
+            .footer02 {
+                position: relative;
+                right: -180px;
+            }
+
+
+        }
+
+        @media screen and (max-width: 870px) {
+
+            a {
+                font-size: 14px;
+            }
+
+            .com01,
+            .com03,
+            .com02,
+            .com04 {
+                text-align: center;
+            }
+
+            .footer03 {
+                position: relative;
+                right: -200px;
+                text-align: center;
+            }
+
+            .footer02 {
+                position: relative;
+                right: -100px;
+            }
+
+        }
+
+        @media screen and (max-width:750px) {
+
+            .logoredondo img {
+                max-width: 50%;
             }
 
             #foto img {
@@ -112,7 +190,6 @@
             }
 
             .fotoindex {
-                background-color: rgb(5, 5, 109);
                 height: 550px;
             }
 
@@ -121,7 +198,7 @@
                 margin-top: auto;
                 position: relative;
                 top: -30px;
-                right: 210px;
+                right: 150px;
             }
 
             .fotoindex02 {
@@ -129,7 +206,7 @@
                 margin-top: auto;
                 position: relative;
                 top: -382px;
-                right: -100px;
+                right: -160px;
             }
 
             .fotoindex03 {
@@ -137,7 +214,7 @@
                 margin-top: auto;
                 position: relative;
                 top: -225px;
-                right: 210px;
+                right: 150px;
             }
 
             .fotoindex04 {
@@ -145,8 +222,86 @@
                 margin-top: auto;
                 position: relative;
                 top: -570px;
-                right: -100px;
+                right: -160px;
             }
+
+            .valores {
+                text-align: left;
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .footer03 {
+                position: relative;
+                right: -130px;
+                text-align: center;
+            }
+
+            .footer02 {
+                position: relative;
+                right: -80px;
+            }
+
+        }
+
+        @media screen and (max-width:640px) {
+
+
+
+            #foto img {
+                max-width: 50%;
+
+            }
+
+            .fotoindex {
+                height: 450px;
+            }
+
+            .fotoindex01 {
+                display: inline-block;
+                margin-top: auto;
+                position: relative;
+                top: -30px;
+                right: 150px;
+            }
+
+            .fotoindex02 {
+                display: inline-block;
+                margin-top: auto;
+                position: relative;
+                top: -325px;
+                right: -110px;
+            }
+
+            .fotoindex03 {
+                display: inline-block;
+                margin-top: auto;
+                position: relative;
+                top: -190px;
+                right: 150px;
+            }
+
+            .fotoindex04 {
+                display: inline-block;
+                margin-top: auto;
+                position: relative;
+                top: -490px;
+                right: -110px;
+            }
+
+
+
+            .footer03 {
+                position: relative;
+                right: -85px;
+                text-align: center;
+            }
+
+            .footer02 {
+                position: relative;
+                right: -55px;
+            }
+
         }
     </style>
 
@@ -184,21 +339,23 @@
 
         <div class="fotoindex">
             <nav class="fotoindex01">
-                <a href="mochilas.html"><img src="imagens/1-foto-index-ok.png" alt="Mochila azul marinho com estampa do pequemo príncipe e estojo do pequeno príncipe."></a>
+                <a href="mochilas.html"><img src="imagens/1-foto-index-ok.png"
+                        alt="Mochila azul marinho com estampa do pequemo príncipe e estojo do pequeno príncipe."></a>
             </nav>
 
             <nav class="fotoindex02">
-                <a href="acessorios.html"><img src="imagens/2-foto-index-ok.png" alt="Kit com necessaire e porta óculos com estampa preta com cactos."></a>
+                <a href="acessorios.html"><img src="imagens/2-foto-index-ok.png"
+                        alt="Kit com necessaire e porta óculos com estampa preta com cactos."></a>
             </nav>
 
-            <br>
-
             <nav class="fotoindex03">
-                <a href="necessaires.html"><img src="imagens/3-foto-index-ok.png" alt="Necessaire pequena com estampa do Snoopy."></a>
+                <a href="necessaires.html"><img src="imagens/3-foto-index-ok.png"
+                        alt="Necessaire pequena com estampa do Snoopy."></a>
             </nav>
 
             <nav class="fotoindex04">
-                <a href="escolar.html"><img src="imagens/4-foto-index-ok.png" alt="Kit com estojo e marca páginas com estampa de Star Wars."></a>
+                <a href="escolar.html"><img src="imagens/4-foto-index-ok.png"
+                        alt="Kit com estojo e marca páginas com estampa de Star Wars."></a>
             </nav>
         </div>
 
@@ -207,7 +364,7 @@
             <div class="logomiss">
                 <img src="imagens/icone.png" alt="Logo com um gato cinza com óculos">
             </div>
-            
+
             <div class="textomiss">
                 <h2>Missão</h2>
 
@@ -228,20 +385,23 @@
 
         <div class="comentario">
             <div class="com01">
-                <img src="imagens/comentario-1.png" alt="Nome do cliente: Marcos Antonio avaliou Case multifuncional - Precisa desse produto e só encontrei no Elo 7. Data: 16/08/2022. Comentário do cliente: Minha primeira compra na plataforma, e apesar do receio no início estou muito satisfeito. Chegou tudo do jeito que pedi, com bastante capricho, a qualidade do produto é ótima e além de que ele é muito lindo. O(a) vendedor(a) também foi muito atencioso.">
+                <img src="imagens/comentario-1.png"
+                    alt="Nome do cliente: Marcos Antonio avaliou Case multifuncional - Precisa desse produto e só encontrei no Elo 7. Data: 16/08/2022. Comentário do cliente: Minha primeira compra na plataforma, e apesar do receio no início estou muito satisfeito. Chegou tudo do jeito que pedi, com bastante capricho, a qualidade do produto é ótima e além de que ele é muito lindo. O(a) vendedor(a) também foi muito atencioso.">
             </div>
 
             <div class="com02">
                 <img src="imagens/comentario-2.png"
-                alt="Nome do cliente: Bruna Teixeira de Almeida avaliou Case multifuncional - Presente para minha irmã. Data: 18/01/2022. Comentário do cliente: Lindo!! Eu amei!! Amei os mimos enviados também. Da pra ver o amor e carinho dentro do pacote.">
+                    alt="Nome do cliente: Bruna Teixeira de Almeida avaliou Case multifuncional - Presente para minha irmã. Data: 18/01/2022. Comentário do cliente: Lindo!! Eu amei!! Amei os mimos enviados também. Da pra ver o amor e carinho dentro do pacote.">
             </div>
 
             <div class="com03">
-                <img src="imagens/comentario-3.png" alt="Nome do cliente: Priscilla Correa Cezar avaliou Porta carregador e fone - Para mim e para meu filho. Data: 17/09/2021. Comentário do cliente: Os produtos são muito bem feitos, com um capricho sem igual. Amei tudo e até os mimos enviados!!! Muito obrigada!!">
+                <img src="imagens/comentario-3.png"
+                    alt="Nome do cliente: Priscilla Correa Cezar avaliou Porta carregador e fone - Para mim e para meu filho. Data: 17/09/2021. Comentário do cliente: Os produtos são muito bem feitos, com um capricho sem igual. Amei tudo e até os mimos enviados!!! Muito obrigada!!">
             </div>
 
             <div class="com04">
-                <img src="imagens/comentario-4.png" alt="Nome do cliente: Amanda Fagundes Picolo avaliou Porta talheres - Mimo para mim mesma. Data: 22/10/2018. Comentário do cliente: A entrega veio dentro do prazo, mas a surpresa maior foi quando abri o pacote... material de altíssima qualidade, muito bonito e bem acabado. A Adriana é muito atenciosa, desde a realização do pedido até depois que o recebemos. Extremamente satisfeita, muito obrigada!!!">
+                <img src="imagens/comentario-4.png"
+                    alt="Nome do cliente: Amanda Fagundes Picolo avaliou Porta talheres - Mimo para mim mesma. Data: 22/10/2018. Comentário do cliente: A entrega veio dentro do prazo, mas a surpresa maior foi quando abri o pacote... material de altíssima qualidade, muito bonito e bem acabado. A Adriana é muito atenciosa, desde a realização do pedido até depois que o recebemos. Extremamente satisfeita, muito obrigada!!!">
             </div>
 
             <br>
@@ -256,7 +416,7 @@
             </div>
 
             <div class="whats">
-                <a href="faleconosco.html"><img src="imagens/faleconosco2.png" alt=""></a>
+                <a href="faleconosco.html"><img src="imagens/faleconosco2.png" alt="link fale conosco"></a>
             </div>
     </main>
 
@@ -273,9 +433,11 @@
         <div class="footer02">
             <h3>Contato</h3>
 
-            <p><img src="imagens/logo-gmail.png" alt="Logo de e-mail preto e branco"><a href="mailto:NerdCatAtelie@gmail.com"> E-mail</a></p>
+            <p><img src="imagens/logo-gmail.png" alt="Logo de e-mail preto e branco"><a
+                    href="mailto:NerdCatAtelie@gmail.com"> E-mail</a></p>
 
-            <p><img src="imagens/logo-zap.png" alt="Logo do whatsapp preto e branco"><a href="https://wa.me/5511962601424" target="_blank"> Whatsapp</a>
+            <p><img src="imagens/logo-zap.png" alt="Logo do whatsapp preto e branco"><a
+                    href="https://wa.me/5511962601424" target="_blank"> Whatsapp</a>
             </p>
 
             <p><a href="faleconosco.html">Fale Conosco</a></p>
@@ -283,9 +445,11 @@
 
         <div class="footer03">
             <h3>Siga-nos no Instagram</h3>
-            <p><a href="https://www.instagram.com/nerdcatatelie" target="_blank"><img src="imagens/qrcode-insta.png" alt="Logo preto e branco do Instagram"></a></p>
+            <p><a href="https://www.instagram.com/nerdcatatelie" target="_blank"><img src="imagens/qrcode-insta.png"
+                        alt="Logo preto e branco do Instagram"></a></p>
         </div>
     </footer>
 
 </body>
+
 </html>

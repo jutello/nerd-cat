@@ -17,12 +17,12 @@ img {
     max-width: 100%;
 }
 
-main img{
+main img {
 
     border-radius: 8px;
 }
 
-.footer03 img{ 
+.footer03 img {
     border-radius: 8px;
 }
 
@@ -34,7 +34,10 @@ header {
 
 a {
     text-decoration: none;
+    color: #74014A;
 }
+
+
 
 .logoredondo img {
     border-radius: 100%;
@@ -112,7 +115,7 @@ main {
     position: fixed;
     right: 0px;
     bottom: 10px;
-} */
+}  */
 
 
 #missao,
@@ -126,12 +129,14 @@ footer {
     height: 200px;
     font-family: 'Comfortaa', cursive;
     background-color: #FE7FDB;
-    color: #74014A;
     font-weight: bold;
     font-size: 12px;
     max-width: 100%;
     padding: 15px;
+}
 
+footer h3 {
+    color: #74014A;
 }
 
 footer img {
@@ -169,31 +174,106 @@ footer p {
     justify-content: space-evenly;
 }
 
-form{
+
+form {
     background-color: #f8eaf4;
-    width: 40%;
+    width: 52%;
     margin: auto;
     padding: 16px;
     border-radius: 10px;
     text-align: left;
 }
 
-#nome,#email, #assunto, #mensagem {
+#nome,
+#email,
+#assunto
+{
     width: 100%;
     height: 30px;
     border-radius: 5px;
     border: none;
 }
 
-@media screen and (min-width:450px){
 
-    .fotoindex{
-        height: 400px;
+
+@media screen and (min-width:400px) {
+
+    .logoredondo img {
+        max-width: 30%;
     }
+
+    .fotoindex {
+        height: 330px;
+    }
+
+    .fotoindex01 {
+        display: inline-block;
+        position: relative;
+        top: -15px;
+        left: 0px;
+    }
+
     .fotoindex02 {
         display: inline-block;
         position: relative;
-        top: -230px;
+        top: -212px;
+        right: -180px;
+    }
+
+    .fotoindex03 {
+        display: inline-block;
+        position: relative;
+        top: -130px;
+        left: 0px;
+    }
+
+    .fotoindex04 {
+        display: inline-block;
+        position: relative;
+        top: -325px;
+        right: -180px;
+    }
+
+    .valores img {
+        max-width: 60%;
+    }
+
+    footer {
+        font-size: 10px;
+        max-width: 100%;
+    }
+
+    form {
+        background-color: #f8eaf4;
+        width: 100%;
+        margin: auto;
+        padding: 12px;
+        border-radius: 10px;
+        text-align: left;
+    }
+
+    #nome,
+    #email,
+    #assunto,
+    #mensagem {
+        width: 100%;
+        height: 30px;
+        border-radius: 5px;
+        border: none;
+    }
+
+}
+
+@media screen and (min-width:450px) {
+
+    .fotoindex {
+        height: 400px;
+    }
+
+    .fotoindex02 {
+        display: inline-block;
+        position: relative;
+        top: -240px;
         right: -200px;
     }
 
@@ -204,7 +284,7 @@ form{
         right: -200px;
     }
 
-    form{
+    form {
         background-color: #f8eaf4;
         width: 100%;
         margin: auto;
@@ -212,14 +292,17 @@ form{
         border-radius: 10px;
         text-align: left;
     }
-    
-    #nome,#email, #assunto, #mensagem {
+
+    #nome,
+    #email,
+    #assunto,
+    #mensagem {
         width: 100%;
         height: 30px;
         border-radius: 5px;
         border: none;
     }
-    
+
 }
 
 @media screen and (min-width:470px) {
@@ -227,9 +310,17 @@ form{
     .fotoindex02 {
         display: inline-block;
         position: relative;
-        top: -250px;
+        top: -255px;
         right: -220px;
     }
+
+    .fotoindex03 {
+        display: inline-block;
+        position: relative;
+        top: -140px;
+        right: -220px;
+    }
+
 
     .fotoindex04 {
         display: inline-block;
@@ -242,10 +333,21 @@ form{
 
 @media screen and (min-width:480px) {
 
+    .fotoindex {
+        height: 410px;
+    }
+
     .fotoindex02 {
         display: inline-block;
         position: relative;
-        top: -258px;
+        top: -260px;
+        right: -220px;
+    }
+
+    .fotoindex03 {
+        display: inline-block;
+        position: relative;
+        top: -145px;
         right: -220px;
     }
 
@@ -266,7 +368,7 @@ form{
     .fotoindex02 {
         display: inline-block;
         position: relative;
-        top: -295px;
+        top: -300px;
         right: -250px;
     }
 
@@ -280,7 +382,7 @@ form{
     .fotoindex04 {
         display: inline-block;
         position: relative;
-        top: -460px;
+        top: -450px;
         right: -250px;
     }
 
@@ -299,7 +401,7 @@ form{
     .fotoindex02 {
         display: inline-block;
         position: relative;
-        top: -410px;
+        top: -425px;
         right: -360px;
     }
 
@@ -362,7 +464,7 @@ form{
         font-size: 14px;
         max-width: 100%;
         padding-left: 35px;
-    
+
     }
 
 
@@ -371,26 +473,12 @@ form{
         margin-right: 80px;
     }
 
-    form{
-        background-color: #f8eaf4;
-        width: 70%;
-        margin: auto;
-        padding: 16px;
-        border-radius: 10px;
-        text-align: left;
-    }
-    
-    #nome,#email, #assunto, #mensagem {
-        width: 100%;
-        height: 30px;
-        border-radius: 5px;
-        border: none;
-    }
+   
 
 }
 
-@media screen  and (min-width:1025px){
-    
+@media screen and (min-width:1025px) {
+
     .fotoindex {
         height: 900px;
     }
@@ -399,7 +487,7 @@ form{
         max-width: 90%;
     }
 
-    .fotoindex01{
+    .fotoindex01 {
         display: inline-block;
         position: relative;
         top: 0px;
@@ -435,7 +523,12 @@ form{
     }
 
 
-   
+    .comentario {
+
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+
 
     footer p {
         margin-right: 150px;
@@ -447,6 +540,7 @@ form{
         width: 60vw;
         text-align: center;
     }
+
     #missao {
         padding-left: 130px;
         width: 60vw;
@@ -455,7 +549,6 @@ form{
 
 
 }
-
 
 @media screen and (min-width:1125px) {
 
@@ -467,13 +560,14 @@ form{
         max-width: 100%;
     }
 
-    .fotoindex01{
+    .fotoindex01 {
         display: inline-block;
         position: relative;
         top: 0px;
         left: 150px;
 
     }
+
     .fotoindex02 {
         display: inline-block;
         position: relative;
@@ -511,10 +605,87 @@ form{
         width: 60vw;
         text-align: center;
     }
+
     #missao {
         padding-left: 130px;
         width: 60vw;
         text-align: center;
     }
 
+}
+
+@media screen and (min-width:1530px) {
+
+    .fotoindex img {
+        max-width: 100%;
+    }
+
+    .fotoindex01 {
+        display: inline-block;
+        position: relative;
+        top: 0px;
+        left: 220px;
+
+    }
+
+    .fotoindex02 {
+        display: inline-block;
+        position: relative;
+        top: -240px;
+        right: -250px;
+    }
+
+    .fotoindex03 {
+        display: inline-block;
+        position: relative;
+        top: 360px;
+        left: -750px;
+    }
+
+    .fotoindex04 {
+        display: inline-block;
+        position: relative;
+        top: -220px;
+        right: -740px;
+    }
+
+    .comentario {
+
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+
+    #missao,
+    .comentario,
+    .valores,
+    a {
+        font-size: 20px;
+    }
+
+
+}
+
+@media screen and (min-width:2014px) {
+
+   
+    .fotoindex04 {
+        display: inline-block;
+        position: relative;
+        top: 380px;
+        right: 720px;
+    }
+
+
+    .comentario, .borda {
+
+        padding-left: 350px;
+        padding-right: 350px;
+    }
+
+    #missao,
+    .comentario,
+    .valores,
+    a {
+        font-size: 24px;
+    }
 }

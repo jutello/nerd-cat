@@ -7,60 +7,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nerd Cat - Fale Conosco</title>
   <link rel="shortcut icon" href="imagens/icone.png" type="image/x-icon">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/estilos.css">
+<style>
 
-  <style>
-    .formulario01 {
-      width: 100%;
-      height: 50px;
-      position: relative;
-    }
-
-    .formulario01 label, .formulario01 input {
-      position: absolute;
-    }
-
-    .formulario01 label {
-      left: 0;
-      top: 0;
-      z-index: 100;
-      font-size: 14px;
-      
-    }
-
-    .formulario01 input {
-      left: 0;
-      top: 0;
-    }
+  main{
+    text-align: center;
+  }
+  
   </style>
+
+
 </head>
 
 <body>
 
- <header>
-    <nav>
-        <nav class="botao1">
-            <a href="mochilas.html">Mochilas</a>
-        </nav>
+  <header>
 
-        <nav class="botao2">
-            <a href="acessorios.html">Acessórios</a>
-        </nav>
-
-        <nav class="logoredondo">
-            <a href="index.html"><img src="imagens/logo-184px.jpg" alt="Logo com o nome do site"></a>
-        </nav>
-
-        <nav class="botao3">
-            <a href="necessaires.html">Necessaires</a>
-        </nav>
-
-        <nav class="botao4">
-            <a href="escolar.html">Escolar</a>
-        </nav>
+    <nav class="logoredondo">
+        <a href="index.html"><img src="imagens/logo-184px.jpg" alt="Logo com o nome do site"></a>
     </nav>
 
- </header>
+    <nav class="botoes">
+       
+            <a href="mochilas.html">Mochilas</a>
+       
+            <a href="acessorios.html">Acessórios</a>
+        
+            <a href="necessaires.html">Necessaires</a>
+       
+            <a href="escolar.html">Escolar</a>
+    
+    </nav>
+
+</header>
 
 
   <main>
@@ -72,7 +51,7 @@
 
       <div class="formulario01">
         <label for="nome">Nome:</label>
-        <input  type="text" name="nome" id="nome" required>
+        <input type="text" name="nome" id="nome" required>
       </div>
 
       <br><br>
@@ -99,7 +78,7 @@
 
       </div class="formulario04">
       <label for="mensagem"></label> <br>
-      <textarea name="mensagem" id="" cols="50" rows="10"></textarea>
+      <textarea name="mensagem" id="" cols="30" rows="10"></textarea>
       </div>
 
       <br> <br>
@@ -137,9 +116,10 @@
 
     <div class="footer03">
         <h3>Siga-nos no Instagram</h3>
-        <p><img src="imagens/logo-instagram-menor.png" alt="Logo preto e branco do Instagram"></p>
+        <p><a href="https://www.instagram.com/nerdcatatelie" target="_blank"><img src="imagens/qrcode-insta.png"
+                    alt="Logo preto e branco do Instagram"></a></p>
     </div>
-  </footer>
+</footer>
 
   <script>
     var form = document.getElementById("my-form");
@@ -176,4 +156,5 @@
   </script>
 
 </body>
+
 </html>

@@ -186,15 +186,178 @@ form {
 
 #nome,
 #email,
-#assunto
-{
+#assunto {
     width: 100%;
     height: 30px;
     border-radius: 5px;
     border: none;
 }
 
+@media screen and (min-width:320px) {
 
+    .logoredondo img {
+        max-width: 25%;
+    }
+
+    a {
+        font-size: 10px;
+    }
+
+    h3 {
+        font-size: 10px;
+    }
+
+    footer img {
+        max-width: 70%;
+    }
+
+    footer p {
+        margin-right: 10px;
+    }
+
+    .fotoindex {
+        height: 250px;
+    }
+
+    .fotoindex01 {
+        display: inline-block;
+        position: relative;
+        top: -15px;
+        left: -5px;
+    }
+
+    .fotoindex02 {
+        display: inline-block;
+        position: relative;
+        top: -165px;
+        right: -130px;
+    }
+
+    .fotoindex03 {
+        display: inline-block;
+        position: relative;
+        top: -100px;
+        left: -5px;
+    }
+
+    .fotoindex04 {
+        display: inline-block;
+        position: relative;
+        top: -250px;
+        right: -130px;
+    }
+
+
+}
+
+@media screen and (min-width:330px) {
+
+    .fotoindex {
+        height: 270px;
+    }
+
+    .fotoindex01 {
+        display: inline-block;
+        position: relative;
+        top: -15px;
+        left: -5px;
+    }
+
+    .fotoindex02 {
+        display: inline-block;
+        position: relative;
+        top: -170px;
+        right: -130px;
+    }
+
+    .fotoindex03 {
+        display: inline-block;
+        position: relative;
+        top: -100px;
+        left: -5px;
+    }
+
+    .fotoindex04 {
+        display: inline-block;
+        position: relative;
+        top: -255px;
+        right: -130px;
+    }
+
+}
+
+@media screen and (min-width:340px) {
+
+    .fotoindex {
+        height: 280px;
+
+    }
+
+    .fotoindex01 {
+        display: inline-block;
+        position: relative;
+        top: -15px;
+        left: -5px;
+    }
+
+    .fotoindex02 {
+        display: inline-block;
+        position: relative;
+        top: -176px;
+        right: -135px;
+    }
+
+    .fotoindex03 {
+        display: inline-block;
+        position: relative;
+        top: -100px;
+        left: -5px;
+    }
+
+    .fotoindex04 {
+        display: inline-block;
+        position: relative;
+        top: -260px;
+        right: -135px;
+    }
+
+}
+
+@media screen and (min-width:380px) {
+
+    .fotoindex {
+        height: 340px;
+    }
+
+    .fotoindex01 {
+        display: inline-block;
+        position: relative;
+        top: -15px;
+        left: -5px;
+    }
+
+    .fotoindex02 {
+        display: inline-block;
+        position: relative;
+        top: -200px;
+        right: -160px;
+    }
+
+    .fotoindex03 {
+        display: inline-block;
+        position: relative;
+        top: -110px;
+        left: -5px;
+    }
+
+    .fotoindex04 {
+        display: inline-block;
+        position: relative;
+        top: -295px;
+        right: -160px;
+    }
+
+}
 
 @media screen and (min-width:400px) {
 
@@ -203,7 +366,7 @@ form {
     }
 
     .fotoindex {
-        height: 330px;
+        height: 340px;
     }
 
     .fotoindex01 {
@@ -241,6 +404,12 @@ form {
     footer {
         font-size: 10px;
         max-width: 100%;
+    }
+
+    footer p,
+    footer h3 {
+        padding-left: 25px;
+        margin-right: 30px;
     }
 
     form {
@@ -473,11 +642,16 @@ form {
         margin-right: 80px;
     }
 
-   
+
+
 
 }
 
 @media screen and (min-width:1025px) {
+
+    a {
+        font-size: 18px;
+    }
 
     .fotoindex {
         height: 900px;
@@ -523,6 +697,8 @@ form {
     }
 
 
+
+
     .comentario {
 
         padding-left: 150px;
@@ -534,20 +710,11 @@ form {
         margin-right: 150px;
     }
 
-    .valores {
-        padding-left: 100px;
-        padding-right: 100px;
-        width: 60vw;
-        text-align: center;
-    }
-
+    .valores,
     #missao {
-        padding-left: 130px;
-        width: 60vw;
-        text-align: center;
+        margin-left: 220px;
+
     }
-
-
 }
 
 @media screen and (min-width:1125px) {
@@ -665,9 +832,9 @@ form {
 
 }
 
-@media screen and (min-width:2014px) {
+@media screen and (min-width:2013px) {
 
-   
+
     .fotoindex04 {
         display: inline-block;
         position: relative;
@@ -676,7 +843,8 @@ form {
     }
 
 
-    .comentario, .borda {
+    .comentario,
+    .borda {
 
         padding-left: 350px;
         padding-right: 350px;
